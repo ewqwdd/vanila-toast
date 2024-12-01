@@ -19,7 +19,7 @@ class Toast {
     }
   }
 
-  show(message) {
+  show(message, {className = ""} = {}) {
     const wrapper = this.wrapper || document.body;
     const max = this.max || 5;
     const gap = this.gap || 6;
@@ -28,6 +28,9 @@ class Toast {
     const toast = document.createElement("div");
     toast.classList.add("toast-" + this.hash);
     toast.classList.add(position + "-" + this.hash);
+    if (className) {
+      toast.classList.add(className);
+    }
     toast.innerHTML = message;
 
     const allToasts = document.querySelectorAll(".toast-" + this.hash);
