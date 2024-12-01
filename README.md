@@ -18,7 +18,8 @@
 Download or include the library directly via HTML:
 
 ```html
-<script src="path/to/vanilla-toast.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ewqwdd/vanila-toast@main/main.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ewqwdd/vanila-toast@main/style.min.css" />
 ```
 
 ---
