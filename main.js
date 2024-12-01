@@ -6,7 +6,7 @@ class Toast {
   position = "top";
   hideAfter = 3000;
   hash = "aa81d3cfb";
-  constructor({ wrapper = document.body, max = 5, gap = 6, position = "top", hideAfter = 3000 }) {
+  constructor({ wrapper = document.body, max = 5, gap = 6, position = "top", hideAfter = 3000 } = {}) {
     this.wrapper = wrapper;
     this.max = max;
     this.gap = gap;
@@ -19,7 +19,7 @@ class Toast {
     }
   }
 
-  show(message, {className = ""} = {}) {
+  show(message, { className = "" } = {}) {
     const wrapper = this.wrapper || document.body;
     const max = this.max || 5;
     const gap = this.gap || 6;
